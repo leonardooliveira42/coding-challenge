@@ -1,0 +1,68 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="navbar-brand"> Crewmeister Coding Challenge </div> 
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h3> Absences </h3>  
+            <table class="table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th> User ID </th>
+                  <th> Name </th>
+                  <th> Date </th>
+                </tr>
+              </thead>
+              <tbody>   
+                  <% @allAbsences.each do |absence|%>
+                    <tr>
+                      <td> <%= absence[:user_id] %> </td>
+                      <td> <%= @allMembers.find {|member| member[:user_id] == absence[:user_id]}[:name] %> </td>
+                      <td> <%= absence[:start_date] %> >> <%= absence[:end_date] %> </td>
+                    </tr>
+                  <% end %>
+              </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h3> Vacation </h3>  
+            <table class="table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th> Employees in Vacation </th>
+                  <th> Date </th>
+                </tr>
+              </thead>
+              <tbody>
+                  <% @vacation.each do |item| %>
+                    <tr>
+                        <td> <%= @allMembers.find {|member| item[:user_id] == member[:user_id]}[:name] %> is on vacation </td>
+                        <td> <%= item[:start_date] %> >> <%= item[:end_date] %> </td>
+                    </tr>
+                  <% end %>
+              </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h3> Sick </h3>  
+            <table class="table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th> Sick Employees </th>
+                  <th> Date </th>
+                </tr>
+              </thead>
+              <tbody>
+                  <% @sickness.each do |item| %>
+                  <tr>
+                      <td> <%= @allMembers.find {|member| item[:user_id] == member[:user_id]}[:name] %> is sick </td>
+                      <td> <%= item[:start_date] %> >> <%= item[:end_date] %> </td>
+                  </tr>
+                <% end %>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

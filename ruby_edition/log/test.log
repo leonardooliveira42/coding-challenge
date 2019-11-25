@@ -1,0 +1,1741 @@
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (223.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (65.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (114.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2019-10-29 04:53:47.895631"], ["updated_at", "2019-10-29 04:53:47.895631"]]
+  [1m[35m (104.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "cd30cd0b9a3056f1b8c2fb545fbdffdbf3ae8af7"], ["created_at", "2019-10-29 04:53:48.010803"], ["updated_at", "2019-10-29 04:53:48.010803"]]
+  [1m[35m (101.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (163.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (185.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (146.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (114.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (178.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (180.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2019-10-29 04:53:48.759562"], ["updated_at", "2019-10-29 04:53:48.759562"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2019-10-29 04:53:48.759562"], ["updated_at", "2019-10-29 04:53:48.759562"]]
+  [1m[35m (88.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (90.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "cd30cd0b9a3056f1b8c2fb545fbdffdbf3ae8af7"], ["created_at", "2019-10-29 04:53:48.861856"], ["updated_at", "2019-10-29 04:53:48.861856"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "cd30cd0b9a3056f1b8c2fb545fbdffdbf3ae8af7"], ["created_at", "2019-10-29 04:53:48.861385"], ["updated_at", "2019-10-29 04:53:48.861385"]]
+  [1m[35m (123.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (126.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 17:58:31 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (0.9ms)
+Completed 200 OK in 61ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+HomeControllerTest: test_should_download_the_file
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 18:41:53 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.9ms)
+Completed 200 OK in 40ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+HomeControllerTest: test_should_download_the_file
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 18:42:32 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.2ms)
+Completed 200 OK in 41ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+HomeControllerTest: test_should_download_the_file
+-------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 18:43:04 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.2ms)
+Completed 200 OK in 40ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+HomeControllerTest: test_should_download_the_file
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 18:44:09 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.2ms)
+Completed 200 OK in 39ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 18:44:40 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.4ms)
+Completed 200 OK in 40ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 18:45:44 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.7ms)
+Completed 200 OK in 40ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+----------------------------------------
+HomeControllerTest: test_should_get_index
+HomeControllerTest: test_should_get_home
+-----------------------------------------
+----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 18:45:55 -0300
+Started GET "/home" for 127.0.0.1 at 2019-10-31 18:45:55 -0300
+Processing by HomeController#index as HTML
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.1ms | Allocations: 1177)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.4ms)
+Completed 200 OK in 40ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/packs-test
+Completed 200 OK in 13193ms (Views: 13188.6ms | ActiveRecord: 0.0ms | Allocations: 3728921)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/home" for 127.0.0.1 at 2019-10-31 18:46:39 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.0ms | Allocations: 1177)
+Completed 200 OK in 628ms (Views: 622.4ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+-----------------------------------------
+HomeControllerTest: test_should_get_home
+HomeControllerTest: test_should_get_index
+----------------------------------------
+-----------------------------------------
+Started GET "/index" for 127.0.0.1 at 2019-10-31 18:46:49 -0300
+Started GET "/home" for 127.0.0.1 at 2019-10-31 18:46:49 -0300
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.6ms | Allocations: 1177)
+Completed 200 OK in 628ms (Views: 622.3ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 18:47:04 -0300
+Started GET "/home" for 127.0.0.1 at 2019-10-31 18:47:04 -0300
+Processing by HomeController#index as HTML
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 2.9ms | Allocations: 1177)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (0.9ms)
+Completed 200 OK in 83ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 603ms (Views: 595.9ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_should_download_file
+---------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:03:19 -0300
+Started GET "/" for 127.0.0.1 at 2019-10-31 19:03:19 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#index as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.3ms | Allocations: 1177)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.9ms)
+Completed 200 OK in 40ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 19:03:19 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (0.2ms)
+Completed 200 OK in 76ms (ActiveRecord: 0.0ms | Allocations: 52481)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 675ms (Views: 671.2ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+------------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:10:44 -0300
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:10:44 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.5ms | Allocations: 1177)
+  Rendered home/home.erb within layouts/application (Duration: 1.5ms | Allocations: 1177)
+Completed 200 OK in 682ms (Views: 674.8ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 19:10:45 -0300
+Processing by HomeController#index as HTML
+Completed 200 OK in 692ms (Views: 685.4ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.0ms)
+Completed 200 OK in 18ms (ActiveRecord: 0.0ms | Allocations: 53556)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:11:21 -0300
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 19:11:21 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#index as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.2ms | Allocations: 1177)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.3ms)
+Completed 200 OK in 38ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:11:21 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 2.8ms | Allocations: 1177)
+Completed 200 OK in 671ms (Views: 665.8ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 645ms (Views: 643.6ms | ActiveRecord: 0.0ms | Allocations: 1279695)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 19:11:53 -0300
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:11:53 -0300
+Processing by HomeController#index as HTML
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.0ms | Allocations: 1177)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.3ms)
+Completed 200 OK in 38ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:11:53 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 2.8ms | Allocations: 1177)
+Completed 200 OK in 669ms (Views: 665.5ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 652ms (Views: 649.7ms | ActiveRecord: 0.0ms | Allocations: 1279695)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:12:04 -0300
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:12:04 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.2ms | Allocations: 1177)
+  Rendered home/home.erb within layouts/application (Duration: 1.1ms | Allocations: 1177)
+Completed 200 OK in 640ms (Views: 636.3ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 19:12:04 -0300
+Completed 200 OK in 648ms (Views: 644.3ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+Processing by HomeController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.2ms)
+Completed 200 OK in 20ms (ActiveRecord: 0.0ms | Allocations: 53556)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:15:03 -0300
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:15:03 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.2ms | Allocations: 1177)
+  Rendered home/home.erb within layouts/application (Duration: 1.1ms | Allocations: 1177)
+Completed 200 OK in 654ms (Views: 648.0ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 19:15:04 -0300
+Processing by HomeController#index as HTML
+Completed 200 OK in 661ms (Views: 657.2ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (0.9ms)
+Completed 200 OK in 14ms (ActiveRecord: 0.0ms | Allocations: 53556)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 19:16:39 -0300
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:16:39 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#index as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.0ms | Allocations: 1177)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.5ms)
+Completed 200 OK in 38ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 19:16:39 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 1.8ms | Allocations: 467)
+Completed 200 OK in 679ms (Views: 675.0ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:16:39 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 0.5ms | Allocations: 592)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 6841)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 650ms (Views: 648.4ms | ActiveRecord: 0.0ms | Allocations: 1279074)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 19:17:31 -0300
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:17:31 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+Processing by HomeController#home as HTML
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.6ms | Allocations: 467)
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.3ms | Allocations: 1177)
+Completed 200 OK in 670ms (Views: 665.8ms | ActiveRecord: 0.0ms | Allocations: 1279205)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 19:17:31 -0300
+Processing by HomeController#index as HTML
+Completed 200 OK in 677ms (Views: 673.5ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:17:31 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 0.5ms | Allocations: 592)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.4ms)
+Completed 200 OK in 19ms (ActiveRecord: 0.0ms | Allocations: 53556)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 6841)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 19:18:00 -0300
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:18:00 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#index as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.1ms | Allocations: 1177)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.9ms)
+Completed 200 OK in 38ms (ActiveRecord: 0.0ms | Allocations: 53693)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:18:00 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 2.0ms | Allocations: 1177)
+Completed 200 OK in 664ms (Views: 660.3ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 19:18:01 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.7ms | Allocations: 327)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6804)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 642ms (Views: 639.6ms | ActiveRecord: 0.0ms | Allocations: 1279695)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:19:31 -0300
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 19:19:31 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering home/home.erb within layouts/application
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.2ms | Allocations: 1177)
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.6ms | Allocations: 467)
+Completed 200 OK in 651ms (Views: 647.3ms | ActiveRecord: 0.0ms | Allocations: 1279205)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_home
+----------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:19:31 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.1ms | Allocations: 1037)
+Completed 200 OK in 662ms (Views: 658.0ms | ActiveRecord: 0.0ms | Allocations: 1279826)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 7419)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/home/index" for 127.0.0.1 at 2019-10-31 19:19:31 -0300
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 19:19:31 -0300
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 0.7ms | Allocations: 365)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 7950)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.8ms)
+Completed 200 OK in 16ms (ActiveRecord: 0.0ms | Allocations: 53556)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:35:12 -0300
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 19:35:12 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Rendering home/home.erb within layouts/application
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 0.7ms | Allocations: 506)
+  Rendered home/home.erb within layouts/application (Duration: 1.2ms | Allocations: 1177)
+Completed 200 OK in 640ms (Views: 636.6ms | ActiveRecord: 0.0ms | Allocations: 1280353)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-10-31 19:35:13 -0300
+Processing by HomeController#index as HTML
+Completed 200 OK in 653ms (Views: 648.6ms | ActiveRecord: 0.0ms | Allocations: 1279825)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 19:35:13 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering home/single-employee-page.html.erb within layouts/application
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (0.9ms)
+Completed 200 OK in 15ms (ActiveRecord: 0.0ms | Allocations: 53556)
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.5ms | Allocations: 327)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 6804)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:36:25 -0300
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 19:36:25 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering home/home.erb within layouts/application
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.8ms | Allocations: 467)
+  Rendered home/home.erb within layouts/application (Duration: 1.4ms | Allocations: 1177)
+Completed 200 OK in 654ms (Views: 648.2ms | ActiveRecord: 0.0ms | Allocations: 1279205)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 19:36:25 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 0.4ms | Allocations: 366)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 7952)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-10-31 19:36:25 -0300
+Completed 200 OK in 674ms (Views: 666.5ms | ActiveRecord: 0.0ms | Allocations: 1279825)
+Processing by HomeController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.4ms)
+Completed 200 OK in 17ms (ActiveRecord: 0.0ms | Allocations: 53575)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_user
+---------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:42:58 -0300
+Started GET "/?userId=645" for 127.0.0.1 at 2019-10-31 19:42:58 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"645"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1231)
+  Rendering home/home.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendered home/home.erb within layouts/application (Duration: 1.4ms | Allocations: 1177)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-10-31 19:42:58 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (2.3ms)
+Completed 200 OK in 45ms (ActiveRecord: 0.0ms | Allocations: 53607)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 19:42:58 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 1.3ms | Allocations: 465)
+Completed 200 OK in 655ms (Views: 648.4ms | ActiveRecord: 0.0ms | Allocations: 1279825)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 19:42:58 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 0.7ms | Allocations: 366)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 7952)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 631ms (Views: 630.3ms | ActiveRecord: 0.0ms | Allocations: 1278415)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_user
+---------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 19:43:24 -0300
+Started GET "/?userId=645" for 127.0.0.1 at 2019-10-31 19:43:24 -0300
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Parameters: {"userId"=>"645"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1231)
+  Rendering home/single-employee-page.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.7ms | Allocations: 467)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-10-31 19:43:24 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (3.5ms)
+Completed 200 OK in 50ms (ActiveRecord: 0.0ms | Allocations: 53607)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:43:24 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 3.5ms | Allocations: 1175)
+Completed 200 OK in 784ms (Views: 780.6ms | ActiveRecord: 0.0ms | Allocations: 1279205)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 19:43:25 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 0.6ms | Allocations: 366)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 7952)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 752ms (Views: 749.7ms | ActiveRecord: 0.0ms | Allocations: 1279035)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_user
+---------------------------------------
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 19:43:34 -0300
+Started GET "/?userId=645" for 127.0.0.1 at 2019-10-31 19:43:34 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"645"}
+  Rendering html template
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 7ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1231)
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 0.9ms | Allocations: 506)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-10-31 19:43:34 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (2.7ms)
+Completed 200 OK in 48ms (ActiveRecord: 0.0ms | Allocations: 53607)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 19:43:35 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 1.4ms | Allocations: 465)
+Completed 200 OK in 677ms (Views: 670.5ms | ActiveRecord: 0.0ms | Allocations: 1280353)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 19:43:35 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.2ms | Allocations: 1037)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 7418)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 631ms (Views: 630.5ms | ActiveRecord: 0.0ms | Allocations: 1278415)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 20:23:24 -0300
+Started GET "/" for 127.0.0.1 at 2019-10-31 20:23:24 -0300
+Processing by HomeController#home as HTML
+Processing by HomeController#index as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.5ms | Allocations: 1177)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.9ms)
+Completed 200 OK in 51ms (ActiveRecord: 0.0ms | Allocations: 53712)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 20:23:24 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 1.7ms | Allocations: 506)
+Completed 200 OK in 693ms (Views: 686.2ms | ActiveRecord: 0.0ms | Allocations: 1279825)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 20:23:25 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.5ms | Allocations: 327)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 6804)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_user
+---------------------------------------
+Started GET "/?userId=645" for 127.0.0.1 at 2019-10-31 20:23:25 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"645"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 466)
+Completed 200 OK in 649ms (Views: 646.7ms | ActiveRecord: 0.0ms | Allocations: 1280222)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_date
+---------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/?startDate=1&endDate=1" for 127.0.0.1 at 2019-10-31 20:23:25 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"1", "endDate"=>"1"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 440)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_date
+---------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 20:23:50 -0300
+Started GET "/?startDate=1&endDate=1" for 127.0.0.1 at 2019-10-31 20:23:50 -0300
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Parameters: {"startDate"=>"1", "endDate"=>"1"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1330)
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.7ms | Allocations: 467)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-10-31 20:23:50 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (2.8ms)
+Completed 200 OK in 55ms (ActiveRecord: 0.0ms | Allocations: 53607)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 20:23:50 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 4.3ms | Allocations: 1175)
+Completed 200 OK in 689ms (Views: 686.0ms | ActiveRecord: 0.0ms | Allocations: 1279205)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 20:23:51 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 0.6ms | Allocations: 366)
+Completed 200 OK in 624ms (Views: 621.6ms | ActiveRecord: 0.0ms | Allocations: 1279035)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 7952)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_user
+---------------------------------------
+Started GET "/?userId=645" for 127.0.0.1 at 2019-10-31 20:23:51 -0300
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"645"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 342)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-10-31 20:24:35 -0300
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 20:24:35 -0300
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 0.8ms | Allocations: 506)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.3ms)
+Completed 200 OK in 41ms (ActiveRecord: 0.0ms | Allocations: 53712)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_date
+---------------------------------------
+Started GET "/?startDate=1&endDate=1" for 127.0.0.1 at 2019-10-31 20:24:35 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"1", "endDate"=>"1"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 1231)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_user
+---------------------------------------
+Started GET "/?userId=645" for 127.0.0.1 at 2019-10-31 20:24:35 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"645"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 341)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 20:24:35 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 1.8ms | Allocations: 465)
+Completed 200 OK in 673ms (Views: 669.0ms | ActiveRecord: 0.0ms | Allocations: 1280353)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+HomeControllerTest: test_range_date_inverted
+--------------------------------------------
+Started GET "/?startDate=2017-04-01&endDate=2017-01-01" for 127.0.0.1 at 2019-10-31 20:24:36 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-04-01", "endDate"=>"2017-01-01"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 492)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 20:24:36 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 0.8ms | Allocations: 1037)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 7417)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 623ms (Views: 621.2ms | ActiveRecord: 0.0ms | Allocations: 1278404)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_user
+---------------------------------------
+Started GET "/?userId=645" for 127.0.0.1 at 2019-10-31 20:24:52 -0300
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 20:24:52 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"645"}
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1231)
+  Rendering home/single-employee-page.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.7ms | Allocations: 467)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-10-31 20:24:52 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (2.7ms)
+Completed 200 OK in 55ms (ActiveRecord: 0.0ms | Allocations: 53607)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 20:24:52 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 1.3ms | Allocations: 504)
+Completed 200 OK in 671ms (Views: 667.6ms | ActiveRecord: 0.0ms | Allocations: 1279205)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 20:24:52 -0300
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 1.3ms | Allocations: 1037)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 7418)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_date
+---------------------------------------
+Started GET "/?startDate=1&endDate=1" for 127.0.0.1 at 2019-10-31 20:24:52 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"1", "endDate"=>"1"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 565)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+HomeControllerTest: test_range_date_inverted
+--------------------------------------------
+Started GET "/?startDate=2017-04-01&endDate=2017-01-01" for 127.0.0.1 at 2019-10-31 20:24:52 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-04-01", "endDate"=>"2017-01-01"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 372)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 645ms (Views: 642.5ms | ActiveRecord: 0.0ms | Allocations: 1279563)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 20:29:30 -0300
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 20:29:30 -0300
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Parameters: {"userId"=>"644"}
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.7ms | Allocations: 467)
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 0.9ms | Allocations: 506)
+Completed 200 OK in 661ms (Views: 656.3ms | ActiveRecord: 0.0ms | Allocations: 1279205)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+HomeControllerTest: test_range_date_inverted
+--------------------------------------------
+Started GET "/?startDate=2017-04-01&endDate=2017-01-01" for 127.0.0.1 at 2019-10-31 20:29:31 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-04-01", "endDate"=>"2017-01-01"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 497)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/home" for 127.0.0.1 at 2019-10-31 20:29:31 -0300
+Completed 200 OK in 673ms (Views: 669.0ms | ActiveRecord: 0.0ms | Allocations: 1280353)
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 0.7ms | Allocations: 1037)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_date
+---------------------------------------
+Started GET "/?startDate=1&endDate=1" for 127.0.0.1 at 2019-10-31 20:29:31 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"1", "endDate"=>"1"}
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 7417)
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 565)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_filtered_array
+---------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_user
+---------------------------------------
+Started GET "/?userId=645" for 127.0.0.1 at 2019-10-31 20:29:31 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"645"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 342)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-10-31 20:29:31 -0300
+Processing by HomeController#index as HTML
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.0ms)
+Completed 200 OK in 18ms (ActiveRecord: 0.0ms | Allocations: 53575)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-10-31 20:31:07 -0300
+Started GET "/?userId=644" for 127.0.0.1 at 2019-10-31 20:31:07 -0300
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 0.9ms | Allocations: 467)
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 0.9ms | Allocations: 506)
+Completed 200 OK in 685ms (Views: 679.3ms | ActiveRecord: 0.0ms | Allocations: 1279205)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-10-31 20:31:08 -0300
+Processing by HomeController#index as HTML
+Completed 200 OK in 697ms (Views: 689.7ms | ActiveRecord: 0.0ms | Allocations: 1280353)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_date
+---------------------------------------
+Started GET "/?startDate=1&endDate=1" for 127.0.0.1 at 2019-10-31 20:31:08 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"1", "endDate"=>"1"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 565)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_user
+---------------------------------------
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.5ms)
+Completed 200 OK in 17ms (ActiveRecord: 0.0ms | Allocations: 53575)
+Started GET "/?userId=645" for 127.0.0.1 at 2019-10-31 20:31:08 -0300
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"645"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 341)
+Started GET "/home" for 127.0.0.1 at 2019-10-31 20:31:08 -0300
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+HomeControllerTest: test_range_date_inverted
+--------------------------------------------
+Processing by HomeController#home as HTML
+  Rendering home/home.erb within layouts/application
+Started GET "/?startDate=2017-04-01&endDate=2017-01-01" for 127.0.0.1 at 2019-10-31 20:31:08 -0300
+  Rendered home/home.erb within layouts/application (Duration: 0.8ms | Allocations: 1037)
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-04-01", "endDate"=>"2017-01-01"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 367)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 7418)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+HomeControllerTest: test_return_the_ical_file
+---------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_date
+---------------------------------------
+Started GET "/" for 127.0.0.1 at 2019-11-01 12:11:31 -0300
+Started GET "/?startDate=1&endDate=1" for 127.0.0.1 at 2019-11-01 12:11:31 -0300
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"1", "endDate"=>"1"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1330)
+Sent file /home/leo/Desktop/crewmeister/coding-challenge/ruby_edition/public/docs/ical.icb (1.1ms)
+Completed 200 OK in 22ms (ActiveRecord: 0.0ms | Allocations: 53680)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_range_date_page
+------------------------------------------------
+Started GET "/?startDate=2017-01-01&endDate=2017-03-01" for 127.0.0.1 at 2019-11-01 12:11:31 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-01-01", "endDate"=>"2017-03-01"}
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+HomeControllerTest: test_can_see_single_employee
+------------------------------------------------
+Started GET "/?userId=644" for 127.0.0.1 at 2019-11-01 12:11:31 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"644"}
+  Rendering home/single-employee-page.html.erb within layouts/application
+  Rendered home/single-employee-page.html.erb within layouts/application (Duration: 1.6ms | Allocations: 465)
+  Rendering home/range-date-page.html.erb within layouts/application
+  Rendered home/range-date-page.html.erb within layouts/application (Duration: 1.3ms | Allocations: 508)
+Completed 200 OK in 833ms (Views: 832.2ms | ActiveRecord: 0.0ms | Allocations: 1278435)
+Completed 200 OK in 839ms (Views: 814.4ms | ActiveRecord: 0.0ms | Allocations: 1280255)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+HomeControllerTest: test_range_date_inverted
+--------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+HomeControllerTest: test_can_see_home_page
+------------------------------------------
+Started GET "/?startDate=2017-04-01&endDate=2017-01-01" for 127.0.0.1 at 2019-11-01 12:11:32 -0300
+Started GET "/home" for 127.0.0.1 at 2019-11-01 12:11:32 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"startDate"=>"2017-04-01", "endDate"=>"2017-01-01"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 374)
+Processing by HomeController#home as HTML
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  Rendering home/home.erb within layouts/application
+  Rendered home/home.erb within layouts/application (Duration: 8.5ms | Allocations: 1037)
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+HomeControllerTest: test_not_valid_user
+---------------------------------------
+Started GET "/?userId=645" for 127.0.0.1 at 2019-11-01 12:11:32 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"userId"=>"645"}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 341)
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.0ms | Allocations: 7418)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m

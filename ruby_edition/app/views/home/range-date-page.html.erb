@@ -1,0 +1,29 @@
+<nav class="navbar navbar-dark bg-dark text-white">
+    <div class="navbar-brand"> Range date: <%= @selectedDates[0] %> to <%= @selectedDates[1] %>  </div> 
+</nav>
+<div class="container mt-4">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr class="d-flex">
+                    <th class="col-2"> Absence Id </th>
+                    <th class="col-2"> User Id </th>
+                    <th class="col-2"> Employee Name </th>
+                    <th class="col-2"> Start Date </th>
+                    <th class="col-2"> End Date </th>
+                    <th class="col-2"> Motive </th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @rangeDateAbsences.each do |item|  %>
+                <tr class="d-flex">
+                    <td class="col-2"> <%= item[:id] %> </td>
+                    <td class="col-2"> <%= item[:user_id] %> </td>
+                    <td class="col-2"> <%= @allMembers.select{|i| i[:user_id] == item[:user_id]}.first[:name] %> </td>
+                    <td class="col-2"> <%= item[:start_date] %> </td>
+                    <td class="col-2"> <%= item[:end_date] %></td>
+                    <td class="col-2"> <%= item[:type] %> </td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
+</div>

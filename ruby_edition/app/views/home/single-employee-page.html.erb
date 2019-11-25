@@ -1,0 +1,31 @@
+<nav class="navbar navbar-dark bg-dark text-white">
+    <div class="navbar-brand"> Employee: <%= @singleEmployee.first[:name] %>  </div> 
+</nav>
+<div class="container mt-4">
+    <table class="table table-hover table-bordered">
+        <thead>
+          <tr class="d-flex">
+              <th class="col-2"> Absence id </th>
+              <th class="col-2"> Start Date </th>
+              <th class="col-2"> End Date </th>
+              <th class="col-2"> Motive </th>
+              <th class="col-2"> Member Note </th>
+              <th class="col-2"> Addmiter Note</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% @singleEmployee[1].each do |absence| %>
+            <tr class="d-flex">
+                <td class="col-2"> <%= absence[:id] %> </td>
+                <td class="col-2"> <%= absence[:start_date] %> </td>
+                <td class="col-2"> <%= absence[:end_date] %> </td>
+                <td class="col-2"> <%= absence[:type] %> </td>
+                <td class="col-2"> <%= absence[:member_note] %> </td>
+                <td class="col-2"> <%= absence[:admitter_note] %> </td>
+            </tr>
+            <% end %>
+        </tbody>
+      </table>
+</div>
+
+<p> </p>
